@@ -1,0 +1,104 @@
+/* gooogle fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Mukta&family=Pangolin&display=swap');
+
+/*
+font-family: 'Dosis', sans-serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Pangolin', cursive;
+*/
+h2{
+    font-family: 'Mukta', sans-serif;
+}
+p, input{
+    font-family: 'Pangolin', cursive;
+}
+button, ::placeholder{
+    font-family: 'Dosis', sans-serif;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkseagreen;
+    margin: 0;
+    padding: 0;
+}
+.app{
+    width: 500px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 0 3px darkgreen;
+    margin: 20px 0;
+}
+form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    outline: 2px solid darkgray;
+    border-radius: 4px;
+}
+form input{
+    flex: 1;
+    height: 30px;
+    padding: 2px 12px;
+    font-size: 18px;
+}
+form button{
+    width: 80px;
+    height: 35px;
+    cursor: pointer;
+    background-color: darkblue;
+    color: #fff;
+    font-size: 18px;
+}
+form button,form input{
+    border: none;
+    outline: none;
+}
+.status{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+.status p{
+    margin-bottom:-4px;
+    font-size: 15px;
+}
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(183, 208, 216);
+    border-left: 5px solid brown;
+    margin: 4px 0;
+    padding: 0 3px;
+}
+.task.completed{
+    border-left: 5px solid green;
+}
+.task .icons .icon {
+    margin: 0 2px;
+    cursor: pointer;
+}
+.spinner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.spinner img{
+    max-width: 100px;
+}
+
+
+
+/* media queries */
+@media (max-width: 750px) {
+    .app{
+        max-width: 300px;
+    }
+}
